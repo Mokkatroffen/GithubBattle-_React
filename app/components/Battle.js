@@ -1,33 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const Link = require('react-router-dom').Link;
-
-function PlayerPreview (props) {
-    return (
-        <div>
-            <div className='column'>
-                <img
-                    className='avatar'
-                    src={props.avatar}
-                    alt={'Avatar for ' + props.username}
-                />
-                <h2 className='username'>@{props.username}</h2>
-            </div>
-            <button
-                className='reset'
-                onClick={props.onReset.bind(null, props.id)}>
-                Reset
-            </button>
-        </div>
-    )
-}
-
-PlayerPreview.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    onReset: PropTypes.func.isRequired,
-    id: PropTypes.string.isRequired
-};
+const PlayerPreview =  require('./PlayerPreview');
 
 class PlayerInput extends React.Component {
     constructor(props) {
@@ -143,7 +117,7 @@ class Battle extends React.Component {
                         id='playerOne'
                     />}
 
-                    {!playerTwoName &&
+                    {!playerTwoName && 
                     <PlayerInput
                         id='playerTwo'
                         label='Player Two'
