@@ -39,12 +39,12 @@ devDependencies:
 
 ## Authors
 
+* **Kristian Munter Simonsen** - *Author of this version* - [Mokkatroffen](https://github.com/mokkatroffen)
 * **Tyler McGinnins** - *Initial work* - [tylermcginnins](https://github.com/tylermcginnis)
-
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
